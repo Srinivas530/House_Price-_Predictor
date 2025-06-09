@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import json
-import house
+
 
 st.set_page_config(page_title="Bangalore Home Price Estimator", layout="wide")
 
