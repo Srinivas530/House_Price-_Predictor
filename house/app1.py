@@ -6,17 +6,17 @@ import json
 st.set_page_config(page_title="Bangalore Home Price Estimator", layout="wide")
 
 # Load model
-with open("house/banglore_home_prices_model1.pickle", "rb") as f:
+with open("banglore_home_prices_model1.pickle", "rb") as f:
     model = pickle.load(f)
 
-with open("house/model_mape.pickle", "rb") as f:
+with open("model_mape.pickle", "rb") as f:
     mape = pickle.load(f)
 
-with open("house/model_r2.pickle", "rb") as f:
+with open("model_r2.pickle", "rb") as f:
     r2 = pickle.load(f)
 
 # Load column names from JSON
-with open("house/columns1.json", "r") as f:
+with open("columns1.json", "r") as f:
     data_columns = json.load(f)['data_columns']
 
 # Extract feature names
